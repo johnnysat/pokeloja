@@ -13,8 +13,8 @@ body, html {
     font-weight: bold ;
     font-size: 25px;
     padding-left: 20%;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .store-title {
@@ -26,18 +26,32 @@ body, html {
 
 header .search {
     position: absolute;
-    left: 35%;
+    left: 34%;
     top: 10px;
 }
 
-button .teste2 {
+.search-input input {
+    padding: 10px 30px 14px 15px;
+    border: 0;
+    width: 120px;
+    border-radius: 6px;
+    transition: width 0.2s ease-in;
+}
+
+header .search button {
     position: absolute;
-    left: 55%;
-    width:40px;
+    left: 150px;
+    top: 6;
+    width: 40px;
     height: 40px;
     border: 0;
     background: url('../imagens/search-icon.png') no-repeat center center;
     cursor: pointer;
+}
+
+header .search-input input:focus {
+    width: 240px;
+    outline: 3px solid #000;
 }
 
 .navbar {
