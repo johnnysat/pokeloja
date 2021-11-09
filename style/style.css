@@ -24,41 +24,21 @@ body, html {
     text-decoration: none;
 }
 
-.main-header .search {
-    margin-left: 15px;
-}
-
-.main-header .search-input {
-    position: relative;
-}
-
-.main-header .search-input button {
+header .search {
     position: absolute;
-    right: 3px;
-    top: 3px;
+    left: 35%;
+    top: 10px;
 }
 
-.main-header .search-input input {
-    padding: 14px 30px 14px 15px;
-    border: 0;
-    width: 120px;
-    border-radius: 6px;
-    transition: width 0.2s ease-in;
-}
-
-header .main-header .search-input button {
-    width: 40px;
+button .teste2 {
+    position: absolute;
+    left: 55%;
+    width:40px;
     height: 40px;
     border: 0;
-    background: url('../images/search-icon.png') no-repeat center center;
+    background: url('../imagens/search-icon.png') no-repeat center center;
     cursor: pointer;
 }
-
-header .main-header .search-input input:focus {
-    width: 240px;
-    outline: 3px solid #e040fb;
-}
-
 
 .navbar {
     background: #000000;
