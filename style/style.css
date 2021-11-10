@@ -40,7 +40,7 @@ header .search {
 
 header .search button {
     position: absolute;
-    left: 150px;
+    right: 2px;
     top: 6;
     width: 40px;
     height: 40px;
@@ -81,8 +81,8 @@ header .search-input input:focus {
 
 /*Content Section */
 .content-section {
-    padding-top: 30px;
-    padding-left: 20%; 
+    padding-top: 10px;
+    padding-left: 10%; 
 }
 
 /*Poke list*/
@@ -152,4 +152,50 @@ header .search-input input:focus {
 .poke-list .poke-buy-btn img {
     width: 22px;
     margin-right: 8px;
+}
+
+/* Aside */
+aside {
+    padding-left: 30px;
+    width: 25%;
+}
+
+aside .poke-ads {
+    display: block;
+    height: 250px;
+    background-image: url(../imagens/mewtwo.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+asidede .poke-ads::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+aside .poke-ads>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+aside .poke-ads .poke.ads-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+aside .poke-ads .poke-ads-description {
+    font-size: 12px;
 }
