@@ -1,5 +1,28 @@
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 34% 34% 32%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "container container sidenav"
+        "footer footer footer";
+}
+
 * {
     box-sizing: border-box;
+}
+
+main {
+    grid-area: container;
+    display: fleX;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 125px;
 }
 
 body, html {
@@ -8,9 +31,16 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 /*Cabeçalho e Navegação*/
+header {
+    grid-area: header;
+    /*Aumentar barra de pesquisa e colocar borda ao clicar*/
+  }
+
 .cabecalho {
     background: orange;
-    font-weight: bold ;
+    font-weight: bold;
+    width: auto;
+    display: flex;
     font-size: 25px;
     padding-left: 20%;
     padding-top: 10px;
@@ -156,8 +186,12 @@ header .search-input input:focus {
 
 /* Aside */
 aside {
-    padding-left: 30px;
-    width: 25%;
+    grid-area: sidenav;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 125px;
 }
 
 aside .poke-ads {
@@ -203,3 +237,10 @@ aside .poke-ads .poke-ads-description {
 .poke-img {
     width: 150px;
 }
+
+@media (max-width: 640px) {
+    .grid {
+      display: block;
+      width: 100%;
+    }
+  }
